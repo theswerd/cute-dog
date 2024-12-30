@@ -1,60 +1,84 @@
 'use client';
-import Image from 'next/image';
 
 export default function Page() {
     return (
-        <div className="w-full min-h-screen flex items-center justify-center bg-white dark:bg-black transition-colors duration-200 flex-col p-4 gap-[32px]">
-            <div className="text-center text-gray-900 dark:text-gray-100 p-4">
-                <h1 className="text-4xl md:text-5xl font-semibold mb-4 tracking-tight">
-                    Welcome to your app
-                </h1>
-                <p className="text-xl md:text-2xl text-gray-800 dark:text-gray-300">
-                    This is a blank template React App
-                </p>
-            </div>
-            <div className="w-full max-w-[1065px] flex gap-4 md:gap-5 p-4 md:p-6 text-red-500 flex-col border border-red-300 border-dashed">
-                <p className="dark:text-red-400">
-                    You can delete this parent container to start from a blank page
-                </p>
-
-                <div className="flex flex-col md:flex-row gap-4 md:gap-5 w-full">
-                    <div className="w-full p-4 md:p-8 bg-gray-100 dark:bg-gray-800 flex items-center flex-col gap-4 md:gap-6 transition-colors duration-200 rounded-[16px]">
-                        <div className="w-fit inline-flex items-center px-1.5 py-0.5 bg-purple-50 dark:bg-purple-900/50 border border-purple-300 dark:border-purple-700 rounded-full">
-                            <p className="text-purple-600 dark:text-purple-300 text-xs font-medium uppercase text-center">
-                                AI Chat
-                            </p>
-                        </div>
-                        <p className="text-gray-800 dark:text-gray-300 text-xl md:text-2xl text-center">
-                            Select an element and ask AI to build something with it
-                        </p>
-                        <div className="relative w-full h-[450px] rounded-lg overflow-hidden">
-                            <Image
-                                src="/images/chat.jpg"
-                                alt="AI Chat"
-                                fill
-                                className="object-cover transition-opacity duration-200"
-                                priority
-                            />
-                        </div>
-                    </div>
-                    <div className="w-full p-4 md:p-8 bg-gray-100 dark:bg-gray-800 flex items-center flex-col gap-4 md:gap-6 transition-colors duration-200 rounded-[16px]">
-                        <div className="w-fit inline-flex items-center px-1.5 py-0.5 bg-green-50 dark:bg-green-900/50 border border-green-300 dark:border-green-700 rounded-full">
-                            <p className="text-green-600 dark:text-green-300 text-xs font-medium uppercase text-center">
-                                Code Link
-                            </p>
-                        </div>
-                        <p className="text-gray-800 dark:text-gray-300 text-xl md:text-2xl text-center">
-                            Select and Right-Click to view the code of any element on your page
-                        </p>
-                        <div className="relative w-full h-[450px] rounded-lg overflow-hidden">
-                            <Image
-                                src="/images/right-click.jpg"
-                                alt="Code Link"
-                                fill
-                                className="object-cover transition-opacity duration-200"
-                                priority
-                            />
-                        </div>
+        <div
+            className="relative w-screen h-screen flex justify-center items-center"
+            data-oid="sc:w-u2"
+        >
+            {/* Dog's head */}
+            <div
+                className="relative w-[600px] h-[500px] rounded-[50px] bg-[#D4002E]"
+                data-oid="72lmsqo"
+            >
+                {/* Left ear */}
+                <div
+                    className="absolute -top-20 left-10 w-[150px] h-[200px] rounded-t-[100px] transform -rotate-12 hover:rotate-[-20deg] transition-transform bg-[#D4002E]"
+                    data-oid="hv-cmj6"
+                ></div>
+                {/* Right ear */}
+                <div
+                    className="absolute -top-20 right-10 w-[150px] h-[200px] rounded-t-[100px] transform rotate-12 hover:rotate-[20deg] transition-transform bg-[#D4002E]"
+                    data-oid="rsjbrx-"
+                ></div>
+                {/* Left eye */}
+                <div
+                    className="absolute top-[140px] left-[140px] w-[80px] h-[85px] bg-black rounded-full transform -rotate-6 hover:scale-110 transition-transform"
+                    data-oid="erxulml"
+                >
+                    <div
+                        className="absolute top-[15px] left-[15px] w-[35px] h-[35px] bg-white rounded-full animate-pulse"
+                        data-oid="14zxntc"
+                    ></div>
+                    <div
+                        className="absolute bottom-[15px] right-[20px] w-[15px] h-[15px] bg-white rounded-full opacity-70"
+                        data-oid=".d126g_"
+                    ></div>
+                </div>
+                {/* Left blush */}
+                <div
+                    className="absolute top-[220px] left-[120px] w-[60px] h-[25px] bg-[#FF4D6D] rounded-full opacity-40"
+                    data-oid="fs61tlo"
+                ></div>
+                {/* Right eye */}
+                <div
+                    className="absolute top-[140px] right-[140px] w-[80px] h-[85px] bg-black rounded-full transform rotate-6 hover:scale-110 transition-transform"
+                    data-oid="azagi.y"
+                >
+                    <div
+                        className="absolute top-[15px] left-[15px] w-[35px] h-[35px] bg-white rounded-full animate-pulse"
+                        data-oid="ml:1132"
+                    ></div>
+                    <div
+                        className="absolute bottom-[15px] right-[20px] w-[15px] h-[15px] bg-white rounded-full opacity-70"
+                        data-oid="eqw4kn5"
+                    ></div>
+                </div>
+                {/* Right blush */}
+                <div
+                    className="absolute top-[220px] right-[120px] w-[60px] h-[25px] bg-[#FF4D6D] rounded-full opacity-40"
+                    data-oid="r66hdcr"
+                ></div>
+                {/* Snout */}
+                <div
+                    className="absolute bottom-[100px] left-1/2 transform -translate-x-1/2 w-[180px] h-[140px] bg-[#FFA5B5] rounded-[60px] hover:scale-105 transition-transform"
+                    data-oid="9d7xpkp"
+                >
+                    {/* Nose */}
+                    <div
+                        className="absolute top-[20px] left-1/2 transform -translate-x-1/2 w-[50px] h-[35px] bg-black rounded-[25px] hover:scale-95 transition-transform"
+                        data-oid="2jep_r6"
+                    ></div>
+                    {/* Mouth */}
+                    <div
+                        className="absolute bottom-[30px] left-1/2 transform -translate-x-1/2 w-[100px] h-[40px] border-b-8 border-black rounded-b-[50px] hover:border-b-[10px] transition-all"
+                        data-oid="-ok982b"
+                    >
+                        {/* Tongue */}
+                        <div
+                            className="absolute bottom-[-45px] left-1/2 transform -translate-x-1/2 w-[40px] h-[40px] bg-[#FF597D] rounded-b-full animate-bounce hover:bg-[#FF4D6D]"
+                            data-oid=":gvsk3b"
+                        ></div>
                     </div>
                 </div>
             </div>
