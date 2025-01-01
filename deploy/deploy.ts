@@ -28,7 +28,7 @@ async function deployWebProject(
 
     console.log('Files:', Object.keys(files));
 
-    const response = await fetch('http://localhost:8080/web/v1/deploy', {
+    const response = await fetch('https://api.freestyle.sh/web/v1/deploy', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
