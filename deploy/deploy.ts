@@ -36,7 +36,7 @@ async function deployWebProject(
         },
         body: JSON.stringify({
             files,
-            metadata: {
+            config: {
                 projectId,
                 entrypoint,
             },
