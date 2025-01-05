@@ -32,7 +32,7 @@ async function deployWebProject(
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            Authorization: 'Bearer supersecretcode2',
+            Authorization: `Bearer ${process.env.API_KEY}`,
         },
         body: JSON.stringify({
             files,
